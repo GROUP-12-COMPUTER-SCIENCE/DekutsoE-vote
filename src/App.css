@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap");
+
+body {
+  background-color: rgb(5, 20, 1);
+  display: flex;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 1rem;
+}
+
+.logo {
+  width: 100px;
+}
+
+.logoB {
+  width: 20rem;
+  align-self: center;
+}
+.app {
+  max-width: 1280px;
+}
+
+.user{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-right: 1rem;
+
+}
+
+
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  background-color: rgba(163, 147, 6, 1);
+  padding: 2rem;
+  font-weight: 800;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  color: rgb(8, 49, 2);
+  
+}
+
+legend {
+  text-transform: uppercase;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 2rem;
+  margin-right: 4rem;
+}
+
+input {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 0;
+}
+
+.inputItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+button {
+  padding: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  width: 7rem;
+  background-color: rgb(8, 158, 23);
+  color: rgb(255, 255, 255);
+  border: 0;
+  border-radius: 0.5rem;
+}
+
+button:hover {
+  background-color: green;
+  font-size: larger;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.disclaimer {
+  align-self: center;
+  color: rgb(155, 155, 149);
+  margin-bottom: 1rem;
+}
+
+.support {
+  display: flex;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.disc:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.loginOpt {
+  display: flex;
+  gap: 2rem;
+  align-self: center;
+
+  font-style: oblique;
+}
+
+a {
+  color: rgb(9, 71, 9);
+}
+.opt {
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+.opt:hover {
+  text-transform: uppercase;
+  color: blue;
+  cursor: pointer;
+  text-decoration: unset;
+  transition: all 0.2s ease-in-out; 
+}
+
+.check {
+  display: flex;
+  margin-top: -1rem;
+}
+
+a {
+  text-decoration: none;
+  text-transform: none;
+  margin-bottom: 0.5rem;
+  color: rgb(3, 68, 3);
+}
+
+input[type="checkbox"] {
+  width: unset;
+}
+
+.forgot {
+  align-self: center;
+  text-decoration: underline;
+  color: brown;
+  font-weight: 500;
+}
+
+.forgot:hover {
+  color: rgb(141, 23, 23);
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.currentView {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(77, 214, 13);
+  align-content: center;
+  align-items: center;
+  padding: 0rem 2rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.new {
+  display: flex;
+  width: 9rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+.new:hover {
+  width: 10rem;
+}
+
+.current {
+  text-transform: uppercase;
+}
+
+.link {
+  color: rgb(224, 191, 5);
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  margin-top: 0.5rem;
+  background-color: rgb(33, 99, 3);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.link:hover {
+  color: greenyellow;
+  text-transform: uppercase;
+  font-size: 1.2em; 
+  transition: all 0.2s ease-in-out; 
+}
+
+.links {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.genLinks {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  justify-self: flex-start;
+  margin-left: 2rem;
+  
+}
+
+.regLinks {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+  justify-self: end;
+}
+
+.active {
+  background-color: rgb(199, 169, 2);
+  text-transform: uppercase;
+  font-style: oblique;
+  color: rgb(0, 128, 0);
+  font-weight: 800;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+.error {
+  color: red;
+  font-style: italic;
+  margin-top: -1rem;
+}

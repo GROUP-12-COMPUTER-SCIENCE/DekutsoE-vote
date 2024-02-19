@@ -1,0 +1,181 @@
+.nav {
+  width: 100%;
+}
+
+.currentView {
+  min-height: 2rem;
+}
+.search {
+  display: flex;
+  align-self: center;
+  gap: 5rem;
+  margin-top: 2rem;
+}
+
+.srcInput {
+  width: 15vw;
+  color: rgb(29, 28, 28);
+  font-weight: 800;
+}
+
+.srcIcon,
+.filter {
+  margin-left: -8.3rem;
+  padding: 0.7rem;
+ 
+ 
+}
+
+.item {
+  display: flex;
+  transition: background-color 0.3s ease-in-out;
+  background-color: rgb(155, 132, 3);
+  align-self: center;
+  padding: 1rem 3rem;
+  margin-top: 2rem;
+  gap: 4rem;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.item:hover {
+  cursor: pointer;
+  background-color: rgb(102, 87, 3);
+  transition: all 0.3s ease-in-out;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
+  text-align: center;
+  font-weight: 800;
+  gap: 1rem;
+}
+
+.dateSec {
+  display: flex;
+  gap: 4rem;
+  margin-right: 5rem;
+}
+
+.dateHeader {
+  display: flex;
+  align-items: center;
+}
+
+.elections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-behavior: smooth;
+  overflow: auto;
+  height: 30vw;
+  margin: 1rem;
+}
+
+.sad {
+  width: 20%;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  height: 30vw;
+  font-size: 2rem;
+  font-weight: 500;
+  width: 20ch;
+  text-align: center;
+  color: rgb(2, 71, 2);
+  font-style: italic;
+}
+
+#animation-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#animation-container h3 {
+  animation: scrollText 10s linear infinite;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.delete {
+  display: none;
+  width: 0;
+  opacity: 0;
+  transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.item:hover > .delete {
+  display: unset;
+  width: 2rem;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.delPopUp {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  color: red;
+  position: absolute;
+  background-color: rgba(222, 184, 135, 0.7);
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out, all 0.3s ease-in-out;
+}
+
+.delOptions {
+  display: flex;
+  justify-content: space-between;
+  color: brown;
+}
+
+.option {
+  font-weight: 800;
+}
+
+.option:hover {
+  text-transform: uppercase;
+}
+
+.dropDownOptions {
+  position: absolute;
+  top: calc(19% + 4px); /* Adjust the value to leave space between the icon and options */
+  left: 65%;
+  background-color: rgba(107, 105, 3, 0.7);
+  border: 1px solid #779201;
+  border-radius: 4px;
+  padding: 5px 0;
+  box-shadow: 0px 2px 5px rgba(43, 42, 42, 0.1);
+}
+
+.dropDownOptions p {
+  padding: 8px 20px;
+  margin: 0;
+  cursor: pointer;
+  color: goldenrod;
+}
+
+.dropDownOptions p:hover {
+  background-color: #71ac05;
+  text-transform: unset;
+  font-style: italic;
+  font-weight: 800;
+  color: rgb(24, 68, 4);
+}
+
